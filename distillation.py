@@ -12,7 +12,7 @@ import torch.nn.functional as F
 torch.autograd.set_detect_anomaly(True)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-parser = argparse.ArgumentParser(description='TORSD CIFAR Training')
+parser = argparse.ArgumentParser(description='CORSD CIFAR Training')
 parser.add_argument('--model', default="resnet18", type=str, help="resnet18|resnet34|resnet50|resnet101|resnet152|")
 parser.add_argument('--channel', default=64, type=int, help="feature channel in the first resblock")
 parser.add_argument('--dataset', default="cifar100", type=str, help="cifar100|cifar10")
