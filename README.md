@@ -5,4 +5,4 @@
 Train the ResNet18 model with CORSD on CIFAR100 dataset
 
  ``` python
-python 
+python distillation.py 
